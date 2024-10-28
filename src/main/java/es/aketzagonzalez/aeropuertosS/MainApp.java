@@ -28,6 +28,11 @@ public class MainApp extends Application {
      */
     @Override
     public void start(@SuppressWarnings("exports") Stage s) throws IOException {
+    	try {
+			new ConexionBBDD();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
         stage=s;
 		setRoot("veterinario","Veterinario");
     }
