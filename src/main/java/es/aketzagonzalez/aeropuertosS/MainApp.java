@@ -34,6 +34,7 @@ public class MainApp extends Application {
 			e.printStackTrace();
 		}
         stage=s;
+        stage.setResizable(false);
 		setRoot("veterinario","Veterinario");
     }
 

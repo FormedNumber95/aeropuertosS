@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="621.0" spacing="10.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ctrl.ObservacionController">
+   <children>
+      <HBox alignment="TOP_RIGHT" spacing="5.0">
+         <children>
+            <Label text="Filtrar por nombre" />
+            <TextField fx:id="txtFiltro" />
+         </children>
+      </HBox>
+      <ImageView fx:id="imgAnimal" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="tblAnimales">
+        <columns>
+          <TableColumn fx:id="colObservacion" prefWidth="579.2000003814697" resizable="false" text="Observacion" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" spacing="30.0">
+         <children>
+            <Button fx:id="btnAniadir" mnemonicParsing="false" onAction="#aniadirAnimal" text="Añadir" />
+            <Button fx:id="btnModificar" mnemonicParsing="false" onAction="#modificarAnimal" text="Modificar" />
+            <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminarAnimal" text="Eliminar" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
