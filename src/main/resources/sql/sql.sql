@@ -25,5 +25,6 @@ CREATE TABLE veterinario.observaciones (
 )
 ENGINE=InnoDB
 DEFAULT CHARSET=utf8mb4;
+ALTER TABLE veterinario.animales MODIFY COLUMN foto LONGBLOB DEFAULT NULL NULL;
 
 

@@ -15,11 +15,11 @@
       <HBox alignment="TOP_RIGHT" spacing="5.0">
          <children>
             <Label text="Filtrar por nombre" />
-            <TextField fx:id="txtFiltro" />
+            <TextField fx:id="txtFiltro" onAction="#accionFiltrar" />
          </children>
       </HBox>
       <ImageView fx:id="imgAnimal" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-      <TableView fx:id="tblAnimales">
+      <TableView fx:id="tblObservaciones">
         <columns>
           <TableColumn fx:id="colObservacion" prefWidth="579.2000003814697" resizable="false" text="Observacion" />
         </columns>
